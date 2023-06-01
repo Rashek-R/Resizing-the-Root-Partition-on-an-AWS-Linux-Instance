@@ -15,7 +15,7 @@ Step 3: Modify the volume size by changing the Size value > click Modify.
 
 ## Extending OS file system
 
-After finish modifying the volume,need to extend the OS file system to increase volume size.
+After finish modifying the root volume,need to extend the OS file system to increase volume size.
 
 Step 4: SSH into the server and check whether the storage disk space is allocated by using “lsblk” command. increased volume will be shown just above current volume, e.g., xvda1 is current volume with 8GB size and  xvda with 10GB size
 
@@ -26,13 +26,13 @@ Note: Here dev/xvda denotes the partition name and 1 denotes the partition numbe
 
 ![image](https://github.com/Rashek-R/Resizing-the-Root-Partition-on-an-AWS-Linux-Instance/assets/134732001/75cfe93a-273c-40d3-bbae-1f907ddc3885)
 
-Step 6 : Extend the volume by typing: sudo xfs_growfs /dev/xvda1 
+Step 6 : Extend the root volume by typing: sudo xfs_growfs /dev/xvda1 
 
 ![image](https://github.com/Rashek-R/Resizing-the-Root-Partition-on-an-AWS-Linux-Instance/assets/134732001/444524c6-644e-4296-a4da-1a604e5c1993)
 
 ## Result
-Now check the EBS size allocated to our server by using the “lsblk” command.
-Hence, we have increased the EBS volume from 8GB to10GB
+Now check the root size allocated to our server by using the “lsblk” command.
+Hence, we have increased the root volume from 8GB to10GB
 
 .![image](https://github.com/Rashek-R/Resizing-the-Root-Partition-on-an-AWS-Linux-Instance/assets/134732001/5d254192-0dd4-4896-afc2-1677449c285a)
  
