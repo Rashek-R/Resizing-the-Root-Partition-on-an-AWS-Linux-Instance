@@ -1,4 +1,4 @@
-# Resizing-the-Root-Partition-on-an-AWS-Linux-Instance
+# Resizing-the-Root-volume-of-EC2-Insatnce
 ## The AWS elastic volumes allow online resizing of the root volumes without any downtime of your applications. This is very useful for production applications. Here is the steps to resize the root volume on the EC2 instance.
 
 Step 1: Go to the EC2 service in the AWS console and click on the server-specific volume by selecting the EC2 server > Storage > volume ID
