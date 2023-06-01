@@ -31,7 +31,7 @@ Step 6 : Extend the root volume by typing: sudo xfs_growfs /dev/xvda1
 ![image](https://github.com/Rashek-R/Resizing-the-Root-Partition-on-an-AWS-Linux-Instance/assets/134732001/444524c6-644e-4296-a4da-1a604e5c1993)
 
 ## Result
-Now check the root size allocated to our server by using the “lsblk” command.
+Now check the root size allocated to server by using the “lsblk” command.
 Hence, we have increased the root volume from 8GB to10GB
 
 .![image](https://github.com/Rashek-R/Resizing-the-Root-Partition-on-an-AWS-Linux-Instance/assets/134732001/5d254192-0dd4-4896-afc2-1677449c285a)
